@@ -94,4 +94,18 @@ def load_deseq2_results(filename, gene_col, lfc_col, padj_col):
     return interactions
 
 
-print(load_deseq2_results(filename, gene_col, lfc_col, padj_col))
+# print(load_deseq2_results(filename, gene_col, lfc_col, padj_col))
+
+tupla = load_deseq2_results(filename, gene_col, lfc_col, padj_col)
+
+
+def classify_gene(tupla):
+    resultado = []
+    for gene, log2FoldChange, padj in tupla:
+        if abs(float(log2FoldChange)) >= 1 and float(padj) < 0.05:
+            resultado.append((gene, log2FoldChange, padj))
+    return resultado
+
+
+filtro = classify_gene(tupla)
+print(filtro)
