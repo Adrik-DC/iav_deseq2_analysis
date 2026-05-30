@@ -62,15 +62,6 @@ def parsear_argumentos():
 # ------------------------------------------
 
 
-argumentos = parsear_argumentos()
-filename = argumentos.input
-output = argumentos.output
-gene_col = argumentos.columna_gene
-lfc_col = argumentos.columna_lfc
-padj_col = argumentos.columna_padj
-print(argumentos)
-
-
 def load_deseq2_results(filename, gene_col, lfc_col, padj_col):
     interactions = []
     if not os.path.exists(filename):
@@ -95,10 +86,6 @@ def load_deseq2_results(filename, gene_col, lfc_col, padj_col):
     return interactions
 
 
-# print(load_deseq2_results(filename, gene_col, lfc_col, padj_col))
-
-genes_tupla = load_deseq2_results(filename, gene_col, lfc_col, padj_col)
-
 # ------------------------------------------
 # Extraer los genes significativos del archivo de entrada
 # ------------------------------------------
@@ -116,9 +103,6 @@ def is_significant(genes_tupla):
             filtro.append((gene, log2FoldChange, padj))
     return filtro
 
-
-filtro = is_significant(genes_tupla)
-# print(filtro)
 
 # ------------------------------------------
 # Filtrar los genes por regulación
@@ -140,9 +124,6 @@ def classify_gene(filtro):
     return classify
 
 
-classify = classify_gene(filtro)
-# print(classify)
-
 # ------------------------------------------
 # Escribir los resultados en un archivo de salida (.tsv)
 # ------------------------------------------
@@ -160,8 +141,6 @@ def write_results(output, classify):
             f.write(f"{gene}\t{log2FoldChange}\t{padj}\t{classification}\n")
     print(f"Resultados escritos en {output}")
 
-
-write_results(output, classify)
 
 # ------------------------------------------
 # Escribir el resumen del análisis en la consola
@@ -186,4 +165,25 @@ def print_summary(classify):
     print(f"Downregulated genes: {downregulated}")
 
 
-print_summary(classify)
+def main():
+
+    args = parsear_argumentos()
+    filename = args.input
+    output = args.output
+    gene_col = args.columna_gene
+    lfc_col = args.columna_lfc
+    padj_col = args.columna_padj
+
+    genes_tupla = load_deseq2_results(filename, gene_col, lfc_col, padj_col)
+
+    filtro = is_significant(genes_tupla)
+
+    classify = classify_gene(filtro)
+
+    write_results(output, classify)
+
+    print_summary(classify)
+
+
+if __name__ == "__main__":
+    main()
