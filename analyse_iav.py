@@ -17,7 +17,7 @@ def parsear_argumentos():
 
     Returns:
         argparse.Namespace: Argumentos parseados con atributos
-            `input`, `output`
+            `input`, `output`, `columna_gene`, `columna_lfc`, `columna_padj`.
     """
 
     parser = argparse.ArgumentParser(description=" Analisis de IAV")
@@ -96,16 +96,39 @@ def load_deseq2_results(filename, gene_col, lfc_col, padj_col):
 
 # print(load_deseq2_results(filename, gene_col, lfc_col, padj_col))
 
-tupla = load_deseq2_results(filename, gene_col, lfc_col, padj_col)
+genes_tupla = load_deseq2_results(filename, gene_col, lfc_col, padj_col)
+
+# ------------------------------------------
+# Extraer los genes significativos del archivo de entrada
+# ------------------------------------------
+# ------------------------------------------
+# Responsabilidad: Guardar los genes significativos del archivo de entrada
+# Entrada: genes_tupla
+# Salida: filtro (genes significativos)
+# ------------------------------------------
 
 
-def classify_gene(tupla):
-    resultado = []
-    for gene, log2FoldChange, padj in tupla:
+def is_significant(genes_tupla):
+    filtro = []
+    for gene, log2FoldChange, padj in genes_tupla:
         if abs(float(log2FoldChange)) >= 1 and float(padj) < 0.05:
-            resultado.append((gene, log2FoldChange, padj))
-    return resultado
+            filtro.append((gene, log2FoldChange, padj))
+    return filtro
 
 
-filtro = classify_gene(tupla)
-print(filtro)
+filtro = is_significant(genes_tupla)
+# print(filtro)
+
+
+def classify_gene(filtro):
+    classify = []
+    for gene, log2FoldChange, padj in filtro:
+        if float(log2FoldChange) >= 1:
+            classify.append((gene, log2FoldChange, padj, "upregulated"))
+        elif float(log2FoldChange) <= -1:
+            classify.append((gene, log2FoldChange, padj, "downregulated"))
+    return classify
+
+
+classify = classify_gene(filtro)
+print(classify)
