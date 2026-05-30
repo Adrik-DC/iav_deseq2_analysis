@@ -27,6 +27,20 @@ def parsear_argumentos():
     parser.add_argument("-o", "--output", help="Ruta al archivo fasta de salida")
 
     parser.add_argument(
+        "--lfc-threshold",
+        type=float,
+        default=1,
+        help="Umbral para el log2FoldChange",
+    )
+
+    parser.add_argument(
+        "--padj-threshold",
+        type=float,
+        default=0.05,
+        help="Umbral para el padj (>=0 && <1)",
+    )
+
+    parser.add_argument(
         "--columna-gene",
         type=int,
         default=1,
@@ -96,10 +110,10 @@ def load_deseq2_results(filename, gene_col, lfc_col, padj_col):
 # ------------------------------------------
 
 
-def is_significant(genes_tupla):
+def is_significant(genes_tupla, padj_threshold, lfc_threshold):
     filtro = []
     for gene, log2FoldChange, padj in genes_tupla:
-        if abs(float(log2FoldChange)) >= 1 and float(padj) < 0.05:
+        if abs(float(log2FoldChange)) >= lfc_threshold and float(padj) < padj_threshold:
             filtro.append((gene, log2FoldChange, padj))
     return filtro
 
@@ -121,6 +135,8 @@ def classify_gene(filtro):
             classify.append((gene, log2FoldChange, padj, "upregulated"))
         elif float(log2FoldChange) <= -1:
             classify.append((gene, log2FoldChange, padj, "downregulated"))
+        else:
+            classify.append((gene, log2FoldChange, padj, "not_significant"))
     return classify
 
 
@@ -159,10 +175,14 @@ def print_summary(classify):
     downregulated = sum(
         1 for _, _, _, classification in classify if classification == "downregulated"
     )
+    not_significant = sum(
+        1 for _, _, _, classification in classify if classification == "not_significant"
+    )
     print("Resumen del análisis:")
     print(f"Total genes significativos: {len(classify)}")
     print(f"Upregulated genes: {upregulated}")
     print(f"Downregulated genes: {downregulated}")
+    print(f"Genes no significativos: {not_significant}")
 
 
 def main():
@@ -170,13 +190,15 @@ def main():
     args = parsear_argumentos()
     filename = args.input
     output = args.output
+    padj_threshold = args.padj_threshold
+    lfc_threshold = args.lfc_threshold
     gene_col = args.columna_gene
     lfc_col = args.columna_lfc
     padj_col = args.columna_padj
 
     genes_tupla = load_deseq2_results(filename, gene_col, lfc_col, padj_col)
 
-    filtro = is_significant(genes_tupla)
+    filtro = is_significant(genes_tupla, padj_threshold, lfc_threshold)
 
     classify = classify_gene(filtro)
 
