@@ -17,7 +17,8 @@ def parsear_argumentos():
 
     Returns:
         argparse.Namespace: Argumentos parseados con atributos
-            `input`, `output`, `columna_gene`, `columna_lfc`, `columna_padj`.
+            `input`, `output`, `columna_gene`, `columna_lfc`, `columna_padj`,
+            `lfc_threshold`, `padj_threshold`.
     """
 
     parser = argparse.ArgumentParser(description=" Analisis de IAV")
@@ -77,6 +78,24 @@ def parsear_argumentos():
 
 
 def load_deseq2_results(filename, gene_col, lfc_col, padj_col):
+    """Carga los resultados de DESeq2 desde un archivo de texto.
+
+    Lee el archivo de resultados (esperando una cabecera en la primera línea)
+    y extrae las columnas de interés para cada gen.
+
+    Args:
+        filename (str): Ruta al archivo de entrada.
+        gene_col (int): Índice de la columna que contiene el nombre del gen.
+        lfc_col (int): Índice de la columna que contiene el log2FoldChange.
+        padj_col (int): Índice de la columna que contiene el padj.
+
+    Returns:
+        list[tuple[str, str, str]]: Lista de tuplas `(gene, log2FoldChange, padj)`.
+
+    Raises:
+        SystemExit: Si el archivo no existe.
+    """
+
     interactions = []
     if not os.path.exists(filename):
         print("Error: archivo no encontrado")
@@ -111,6 +130,17 @@ def load_deseq2_results(filename, gene_col, lfc_col, padj_col):
 
 
 def is_significant(genes_tupla, padj_threshold, lfc_threshold):
+    """Filtra genes significativos según umbrales de padj y log2FoldChange.
+
+    Args:
+        genes_tupla (iterable): Iterador o lista de tuplas `(gene, log2FoldChange, padj)`.
+        padj_threshold (float): Umbral máximo para `padj` (valor < padj_threshold).
+        lfc_threshold (float): Umbral mínimo absoluto para `log2FoldChange`.
+
+    Returns:
+        list[tuple[str, str, str]]: Subconjunto de `genes_tupla` que cumplen los umbrales.
+    """
+
     filtro = []
     for gene, log2FoldChange, padj in genes_tupla:
         if abs(float(log2FoldChange)) >= lfc_threshold and float(padj) < padj_threshold:
@@ -129,6 +159,19 @@ def is_significant(genes_tupla, padj_threshold, lfc_threshold):
 
 
 def classify_gene(filtro):
+    """Clasifica genes según la dirección de regulación.
+
+    Args:
+        filtro (iterable): Lista o iterador de tuplas `(gene, log2FoldChange, padj)`
+            que ya han sido filtradas como significativas.
+
+    Returns:
+        list[tuple[str, str, str, str]]: Lista de tuplas
+            `(gene, log2FoldChange, padj, classification)` donde
+            `classification` es una de `"upregulated"`, `"downregulated"`,
+            o `"not_significant"`.
+    """
+
     classify = []
     for gene, log2FoldChange, padj in filtro:
         if float(log2FoldChange) >= 1:
@@ -151,6 +194,16 @@ def classify_gene(filtro):
 
 
 def write_results(output, classify):
+    """Escribe los resultados clasificados en un archivo TSV.
+
+    Args:
+        output (str): Ruta del archivo de salida donde se escribirán los resultados.
+        classify (iterable): Lista de tuplas `(gene, log2FoldChange, padj, classification)`.
+
+    Returns:
+        None
+    """
+
     with open(output, "w") as f:
         f.write("Gene\tlog2FoldChange\tpadj\tClassification\n")
         for gene, log2FoldChange, padj, classification in classify:
@@ -169,6 +222,15 @@ def write_results(output, classify):
 
 
 def print_summary(classify):
+    """Imprime un resumen estadístico simple del análisis en consola.
+
+    Args:
+        classify (iterable): Lista de tuplas `(gene, log2FoldChange, padj, classification)`.
+
+    Returns:
+        None
+    """
+
     upregulated = sum(
         1 for _, _, _, classification in classify if classification == "upregulated"
     )
@@ -186,6 +248,14 @@ def print_summary(classify):
 
 
 def main():
+    """Punto de entrada principal del script.
+
+    Ejecuta el flujo completo: parsear argumentos, cargar datos, filtrar,
+    clasificar, escribir resultados e imprimir resumen.
+
+    Returns:
+        None
+    """
 
     args = parsear_argumentos()
     filename = args.input
