@@ -24,7 +24,7 @@ def parsear_argumentos():
 
     parser.add_argument("-i", "--input", help="Ruta al archivo fasta de entrada")
 
-    # parser.add_argument("-o", "--output", help="Ruta al archivo fasta de salida")
+    parser.add_argument("-o", "--output", help="Ruta al archivo fasta de salida")
 
     parser.add_argument(
         "--columna-gene",
@@ -64,6 +64,7 @@ def parsear_argumentos():
 
 argumentos = parsear_argumentos()
 filename = argumentos.input
+output = argumentos.output
 gene_col = argumentos.columna_gene
 lfc_col = argumentos.columna_lfc
 padj_col = argumentos.columna_padj
@@ -119,6 +120,15 @@ def is_significant(genes_tupla):
 filtro = is_significant(genes_tupla)
 # print(filtro)
 
+# ------------------------------------------
+# Filtrar los genes por regulación
+# ------------------------------------------
+# ------------------------------------------
+# Responsabilidad: filtrar los genes por regulación del archivo de entrada
+# Entrada: filttro (genes significativos)
+# Salida: classify (genes regulados)
+# ------------------------------------------
+
 
 def classify_gene(filtro):
     classify = []
@@ -131,4 +141,49 @@ def classify_gene(filtro):
 
 
 classify = classify_gene(filtro)
-print(classify)
+# print(classify)
+
+# ------------------------------------------
+# Escribir los resultados en un archivo de salida (.tsv)
+# ------------------------------------------
+# ------------------------------------------
+# Responsabilidad: Escribir los resultados en un archivo de salida (.tsv)
+# Entrada: output, classify
+# Salida: output (archivo de salida con los resultados)
+# ------------------------------------------
+
+
+def write_results(output, classify):
+    with open(output, "w") as f:
+        f.write("Gene\tlog2FoldChange\tpadj\tClassification\n")
+        for gene, log2FoldChange, padj, classification in classify:
+            f.write(f"{gene}\t{log2FoldChange}\t{padj}\t{classification}\n")
+    print(f"Resultados escritos en {output}")
+
+
+write_results(output, classify)
+
+# ------------------------------------------
+# Escribir el resumen del análisis en la consola
+# ------------------------------------------
+# ------------------------------------------
+# Responsabilidad: Escribir el resumen del análisis en la consola
+# Entrada: classify
+# Salida: None
+# ------------------------------------------
+
+
+def print_summary(classify):
+    upregulated = sum(
+        1 for _, _, _, classification in classify if classification == "upregulated"
+    )
+    downregulated = sum(
+        1 for _, _, _, classification in classify if classification == "downregulated"
+    )
+    print("Resumen del análisis:")
+    print(f"Total genes significativos: {len(classify)}")
+    print(f"Upregulated genes: {upregulated}")
+    print(f"Downregulated genes: {downregulated}")
+
+
+print_summary(classify)
