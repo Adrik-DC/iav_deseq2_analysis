@@ -99,3 +99,24 @@ flowchart TD
 13. Guardarlo en la lista de resultados.
 14. Escribir la lista en el archivo de salida.
 15. Imprimir un resumen final.
+
+## Actualizacion para agregar informacion del archivo gff
+
+1. Leer argumentos de entrada, salida, lcf, padj, col_gene, col_lcf y col_padj, gff_file
+2. Abrir el archivo de entrada.
+3. Crear una lista vacía para guardar genes leídos.
+4. Leer el archivo de entrada línea por línea.
+5. Ignorar encabezado, líneas vacías o líneas incompletas.
+6. Extraer gene, log2FoldChange y padj y guardarlos en una lista de tuplas.
+7. Convertir log2FoldChange y padj a números.
+8. Leer el archivo gff linea por linea.
+9. Ignorar encabezado, lineas vacias y columnas no necesarias.
+10. Guardar  gene_id, gene_name, description, gene_type, en una lista de tuplas.
+11. Combinar las tuplas.
+9. Crear una lista vacía para genes significativos.
+10. Recorrer los genes válidos.
+11. Evaluar si cada gen cumple padj < padj_threshold y abs(log2FoldChange) >= lfc_threshold.
+12. Si cumple, clasificarlo como sobreexpresado o subexpresado.
+13. Guardarlo en la lista de resultados.
+14. Escribir la lista en el archivo de salida.
+15. Imprimir un resumen final.
