@@ -1,352 +1,101 @@
-Gene	log2FoldChange	padj	Classification
-FASN	-1.8564	0.004207	downregulated
-KRAS	-1.4708	0.009944	downregulated
-FAS	3.8425	0.00096	upregulated
-MKI67	-2.9879	0.001	downregulated
-PTCH1	-0.4588	0.1529	not_significant
-HMGB2	-0.8977	0.99	not_significant
-G6PD	-1.5358	0.003038	downregulated
-PSMA1	0.4979	0.99	not_significant
-PPARGC1A	0.2906	0.99	not_significant
-PSMB3	0.0794	0.99	not_significant
-VIM	-2.1647	0.005078	downregulated
-H3C1	0.3239	0.99	not_significant
-SLC2A1	-1.5279	0.004572	downregulated
-OAS1	7.7669	0.003017	upregulated
-HNRNPA1	-0.115	0.99	not_significant
-XIAP	-1.7521	0.002586	downregulated
-GATA1	-0.1786	0.99	not_significant
-ISG20	5.2831	0.001048	upregulated
-GC	0.4335	0.99	not_significant
-HNRNPU	-0.1726	0.99	not_significant
-IRF7	6.6533	0.003183	upregulated
-CTNNB1	-0.2331	0.99	not_significant
-TWNK	0.1507	0.8521	not_significant
-CXCL10	8.8641	0.001339	upregulated
-NOTCH2	-0.0304	0.99	not_significant
-GUSB	-0.2856	0.99	not_significant
-KIT	0.2595	0.99	not_significant
-HNF4A	0.0564	0.99	not_significant
-HSPA5	0.0429	0.6087	not_significant
-PSMA2	0.6383	0.7228	not_significant
-RPS8	-0.2037	0.8324	not_significant
-KCNMA1	-0.7955	0.7065	not_significant
-ABCB1	-0.0663	0.5538	not_significant
-RPS10	0.4369	0.99	not_significant
-OASL	4.8429	0.003994	upregulated
-ACLY	-2.1018	2.6e-05	downregulated
-NRXN1	-0.2039	0.4939	not_significant
-RPL6	-0.127	0.99	not_significant
-ABCG2	-0.4192	0.8029	not_significant
-RPS3	0.1033	0.99	not_significant
-RUNX1	-0.3979	0.99	not_significant
-RPL19	-0.3014	0.4478	not_significant
-RPL4	0.0468	0.0965	not_significant
-APOE	-0.044	0.99	not_significant
-IFIH1	5.6677	0.003127	upregulated
-CDK4	-2.6789	0.000318	downregulated
-NTRK2	0.0722	0.99	not_significant
-BST2	6.464	0.001706	upregulated
-EGFR_like	0.1216	0.99	not_significant
-TUBB	0.032	0.99	not_significant
-LAMA1	0.1192	0.1471	not_significant
-STUB1	-0.3237	0.99	not_significant
-CCND1	-2.7714	0.011405	downregulated
-TBP	-0.2981	0.99	not_significant
-BMP4	0.0709	0.99	not_significant
-RAB14	-1.0431	0.99	downregulated
-RET	0.908	0.99	not_significant
-FGF7	0.1792	0.147	not_significant
-TNF	4.6093	0.000877	upregulated
-IGF1	-0.1125	0.99	not_significant
-RPL11	-0.7595	0.99	not_significant
-PIK3CA	-1.922	0.01012	downregulated
-RPL17	-0.3233	0.99	not_significant
-RSAD2	8.1292	0.008417	upregulated
-RPL21	-0.0139	0.99	not_significant
-KIF5B	-0.0619	0.99	not_significant
-FLT3	-0.0034	0.99	not_significant
-BCL2	-1.9083	0.006139	downregulated
-RPLP0	0.4105	0.1114	not_significant
-UBA1	-0.7459	0.99	not_significant
-SRSF5	0.2352	0.2662	not_significant
-CCT4	0.1187	0.6647	not_significant
-DNAJB4	0.2352	0.99	not_significant
-CYP3A5	0.4439	0.99	not_significant
-YWHAZ	-0.3944	0.99	not_significant
-ZNFX1	4.1452	0.005905	upregulated
-DDX58	6.6916	0.001146	upregulated
-RAB7A	0.2298	0.7362	not_significant
-GAPDH	0.3453	0.2696	not_significant
-HMGA2	0.3872	0.99	not_significant
-RPS11	0.295	0.99	not_significant
-PTPN6	-1.8233	0.013179	downregulated
-SAMD9L	4.4036	0.000825	upregulated
-TUBA1B	0.1351	0.4128	not_significant
-SRSF2	0.15	0.8684	not_significant
-PSMD3	0.175	0.2285	not_significant
-CYP2D6	-0.0373	0.99	not_significant
-IFITM3	8.8809	0.001986	upregulated
-MCM2	-2.82	0.003527	downregulated
-HERC5	6.101	0.011945	upregulated
-HSP90AA1	0.285	0.99	not_significant
-PSMA3	-0.103	0.5189	not_significant
-CYP2C9	-0.7188	0.99	not_significant
-UBE2D1	-0.0568	0.99	not_significant
-SLC22A1	0.3499	0.99	not_significant
-PPIA	-0.1131	0.99	not_significant
-AHSG	-0.3982	0.2594	not_significant
-U2AF2	-0.0945	0.99	not_significant
-MTOR	-1.4592	0.006216	downregulated
-ISG15	10.2357	0.005496	upregulated
-NRXN2	-0.1369	0.99	not_significant
-PSMC2	-0.3535	0.99	not_significant
-APOBEC3A	3.8668	0.002326	upregulated
-TRIM22	5.2791	0.00193	upregulated
-CCT2	0.2271	0.99	not_significant
-SP100	3.7414	0.002008	upregulated
-SDHA	0.1633	0.99	not_significant
-ATP6V1B2	-1.6863	0.003371	downregulated
-HSPB1	0.6029	0.5569	not_significant
-TFRC	-0.1163	0.99	not_significant
-IFI6	5.9171	0.000312	upregulated
-HSPA1B	-0.4573	0.99	not_significant
-CYP3A4	-0.1398	0.8136	not_significant
-CYP1A1	0.0138	0.7813	not_significant
-TLR3	3.18	0.002438	upregulated
-H2BC3	-0.0648	0.99	not_significant
-HNRNPM	0.2365	0.99	not_significant
-TGFB3	-0.2281	0.99	not_significant
-NOTCH1	-0.3106	0.99	not_significant
-HNRNPF	0.2523	0.99	not_significant
-OAS2	6.1049	0.007062	upregulated
-PCNA	-1.8455	0.005643	downregulated
-OAS3	6.0862	0.000406	upregulated
-NCL	-0.3094	0.3011	not_significant
-RPL3	0.2042	0.99	not_significant
-RPS18	0.8287	0.5925	not_significant
-COL3A1	-0.371	0.99	not_significant
-UBE2A	0.9927	0.99	not_significant
-HGF	-0.5009	0.8286	not_significant
-IFIT1	8.6901	0.006693	upregulated
-HEY1	-0.2856	0.99	not_significant
-ACTB	0.0591	0.2448	not_significant
-MX2	5.0667	0.007146	upregulated
-FGF2	-0.2356	0.99	not_significant
-RAB1A	-0.4296	0.6899	not_significant
-EMILIN1	-0.3566	0.4811	not_significant
-PDGFRA	0.2368	0.99	not_significant
-HNF1A	0.1867	0.5837	not_significant
-PSMB2	0.2973	0.7243	not_significant
-DHX58	3.973	0.000898	upregulated
-BMP7	0.3188	0.99	not_significant
-IFITM1	7.7446	0.004299	upregulated
-ARF3	0.0712	0.99	not_significant
-COL1A1	0.7898	0.99	not_significant
-IFNL1	6.517	0.002665	upregulated
-APOA2	0.1574	0.99	not_significant
-UBE2L6	4.9464	0.00778	upregulated
-STAT1	5.6565	0.001167	upregulated
-PGK1	0.302	0.99	not_significant
-COL4A1	1.0547	0.99	upregulated
-MT-ATP6	-0.2396	0.99	not_significant
-IL8	6.7562	0.011449	upregulated
-CXCL9	7.1675	0.004763	upregulated
-HNRNPK	-0.123	0.99	not_significant
-SRSF3	0.6905	0.2827	not_significant
-TUBA1A	0.0973	0.99	not_significant
-APOC2	-0.1781	0.99	not_significant
-RPL7	-0.1505	0.99	not_significant
-HNRNPL	0.3297	0.99	not_significant
-HMGB1	0.5926	0.99	not_significant
-SCN1A	0.6465	0.99	not_significant
-H2AC4	0.1901	0.99	not_significant
-SFPQ	-0.4036	0.99	not_significant
-DLL1	0.0662	0.99	not_significant
-HSP90B1	0.1286	0.2346	not_significant
-COL5A1	0.6782	0.99	not_significant
-IFI44L	6.7419	0.002338	upregulated
-H2BC1	0.0723	0.99	not_significant
-HSPA8	0.3155	0.6471	not_significant
-NCAM1	0.4319	0.99	not_significant
-LAMB1	0.1804	0.99	not_significant
-CP	-0.0758	0.99	not_significant
-TGFB1	0.0021	0.99	not_significant
-WNT3A	0.4173	0.99	not_significant
-H4C1	-0.2323	0.99	not_significant
-CYP1B1	0.2051	0.7111	not_significant
-TF	0.3935	0.99	not_significant
-CXCL11	6.7014	0.010517	upregulated
-PSMD2	0.5158	0.1262	not_significant
-MAVS	3.5857	0.003806	upregulated
-SMO	-0.1314	0.99	not_significant
-SAMHD1	3.8978	0.005448	upregulated
-CYP2B6	0.0057	0.99	not_significant
-SOCS1	-2.26	0.006244	downregulated
-RPL9	0.0196	0.9457	not_significant
-RPS14	-0.3165	0.99	not_significant
-HNRNPH1	0.1435	0.99	not_significant
-VEGFA	0.423	0.0906	not_significant
-EIF4E	-1.5652	0.006272	downregulated
-FGFR1	-0.271	0.99	not_significant
-APOC1	-0.511	0.99	not_significant
-GLI2	-0.2239	0.9892	not_significant
-PSMC1	-0.3868	0.99	not_significant
-TFAM	0.1001	0.3214	not_significant
-RPS6	-1.2671	4e-06	downregulated
-UBB	0.1289	0.445	not_significant
-GLI1	-0.3349	0.3289	not_significant
-GATA4	0.1284	0.99	not_significant
-IFITM2	5.9493	0.001383	upregulated
-TDP-43	0.2695	0.385	not_significant
-MT-CYB	-0.2984	0.99	not_significant
-SLC3A2	-1.6521	0.003058	downregulated
-RUNX2	0.1567	0.99	not_significant
-HSPA4	0.1369	0.99	not_significant
-ARF4	-0.3847	0.99	not_significant
-RAB5A	0.3489	0.6924	not_significant
-FLT1	-0.4185	0.99	not_significant
-SLC16A1	-0.2441	0.99	not_significant
-RPL5	-1.6962	0.011403	downregulated
-RPS13	0.7425	0.99	not_significant
-RPS12	-0.5382	0.99	not_significant
-HNRNPA2B1	-0.561	0.2938	not_significant
-LDHA	-0.5233	0.99	not_significant
-MYC	-3.4179	0.000818	downregulated
-RPS9	-0.0293	0.99	not_significant
-E2F1	-2.6611	0.012476	downregulated
-IFIT2	7.2339	0.001379	upregulated
-CCND3	-2.2762	0.002342	downregulated
-CDH1	-2.1029	0.000855	downregulated
-UBE2E1	-0.4168	0.99	not_significant
-STING1	4.4681	0.003052	upregulated
-JAG1	0.3915	0.99	not_significant
-IFNL2	4.8949	4e-06	upregulated
-RPS16	0.1897	0.4077	not_significant
-RAB11A	0.2908	0.99	not_significant
-IFNB1	7.4673	0.009888	upregulated
-ITGA5	-1.3413	0.004142	downregulated
-MT-CO2	-0.0961	0.99	not_significant
-MT-ND2	-0.0098	0.99	not_significant
-APC	-0.4105	0.99	not_significant
-MT-ND1	-0.1778	0.7511	not_significant
-PSMB5	0.3565	0.1572	not_significant
-CYP11A1	0.2037	0.99	not_significant
-DNAJB1	0.2706	0.99	not_significant
-CYP2A6	-0.5558	0.99	not_significant
-IL1B	4.7375	0.000471	upregulated
-TRIM25	4.0535	0.003828	upregulated
-HNRNPC	-0.3297	0.99	not_significant
-FOXA2	-0.5053	0.39	not_significant
-RPS15	-0.5766	0.9559	not_significant
-SCD	-1.8122	0.004451	downregulated
-VEGFB	-0.45	0.99	not_significant
-AKT1	-1.3669	0.002384	downregulated
-NTRK1	-0.6302	0.5381	not_significant
-IFIT5	4.4986	0.002475	upregulated
-CASP1	4.2968	0.005099	upregulated
-PDGFRB	-0.1628	0.99	not_significant
-CDK6	-1.8348	0.011527	downregulated
-CYP19A1	0.3391	0.99	not_significant
-TTR	-0.5295	0.4528	not_significant
-CSF1R	-0.2175	0.99	not_significant
-IL6	5.0398	0.004498	upregulated
-EGFR	-2.1918	0.003426	downregulated
-IRF9	4.6208	0.002075	upregulated
-SRSF7	0.458	0.2586	not_significant
-HES1	-0.0757	0.99	not_significant
-L1CAM	0.3521	0.99	not_significant
-RPL8	0.0856	0.99	not_significant
-MCM4	-2.1083	0.004718	downregulated
-RPS4X	0.1514	0.99	not_significant
-PSMD1	-0.1093	0.8001	not_significant
-CACNA1A	-0.1577	0.3534	not_significant
-FOXA1	0.0295	0.5037	not_significant
-ADAR	5.1054	0.000543	upregulated
-FZD1	0.0256	0.99	not_significant
-MX1	9.0299	0.005772	upregulated
-NLGN1	0.293	0.99	not_significant
-NRF1	-0.219	0.8748	not_significant
-SOCS3	-2.1259	0.011298	downregulated
-RPS7	0.062	0.7783	not_significant
-SRSF1	-0.3669	0.4649	not_significant
-IFI27	6.0409	0.00041	upregulated
-MBD2	-1.5878	0.002881	downregulated
-HSPA1A	0.064	0.99	not_significant
-SP1	-1.4755	0.008782	downregulated
-IFI44	6.7946	0.010435	upregulated
-NPM1	-0.5629	0.99	not_significant
-AFP	0.1004	0.99	not_significant
-TRAIL	4.1568	0.001832	upregulated
-STAT2	4.1673	0.000608	upregulated
-SLC1A1	-0.452	0.99	not_significant
-CYP17A1	-0.3899	0.99	not_significant
-POLG	-0.0629	0.99	not_significant
-B2M	-0.275	0.99	not_significant
-RPL14	0.0328	0.99	not_significant
-RPL13	-0.0476	0.3358	not_significant
-U2AF1	-0.5714	0.99	not_significant
-FN1	-2.4691	0.004805	downregulated
-RAB6A	0.1079	0.2002	not_significant
-IFIT3	6.7513	0.005138	upregulated
-NCAM2	0.3734	0.99	not_significant
-DYNC1H1	0.0098	0.99	not_significant
-RPL10	0.4662	0.6327	not_significant
-GATA3	-0.4745	0.99	not_significant
-HSP90AB1	-0.3152	0.99	not_significant
-HERC6	5.2069	0.003025	upregulated
-IFNAR1	3.6601	0.000632	upregulated
-F2	0.2199	0.2851	not_significant
-FZD4	-0.2824	0.99	not_significant
-HMGA1	-0.1564	0.99	not_significant
-IFNA1	4.7469	0.009213	upregulated
-APOA1	0.1662	0.99	not_significant
-HPX	-0.1598	0.99	not_significant
-UBE2B	0.1858	0.8936	not_significant
-EIF2AK2	5.8529	0.002299	upregulated
-TOP2A	-2.0466	0.005962	downregulated
-FBN1	0.152	0.99	not_significant
-ARF1	0.4708	0.99	not_significant
-LAMC1	-0.5116	0.99	not_significant
-FUS	0.0981	0.4478	not_significant
-HPRT1	0.5247	0.2154	not_significant
-UBC	-0.0368	0.9416	not_significant
-BMP2	0.5485	0.99	not_significant
-COL1A2	0.2642	0.1603	not_significant
-PSMB1	-0.1155	0.99	not_significant
-PAX5	0.0481	0.99	not_significant
-CCL5	8.4652	0.002391	upregulated
-IGF2	-0.5585	0.99	not_significant
-IFI35	3.7983	0.005255	upregulated
-SLC7A5	0.1961	0.99	not_significant
-ACACA	-1.6152	0.001763	downregulated
-PAX2	-0.0016	0.99	not_significant
-NONO	-0.2969	0.99	not_significant
-HNRNPD	0.6015	0.8797	not_significant
-RAB2A	0.1421	0.99	not_significant
-TUBG1	-0.6883	0.99	not_significant
-CCND2	-2.5508	0.011396	downregulated
-WNT5A	-0.38	0.7377	not_significant
-ELN	0.5497	0.4595	not_significant
-RAB27A	-0.3191	0.99	not_significant
-PAX6	-0.2361	0.6025	not_significant
-RPL15	-0.5099	0.99	not_significant
-CYP7A1	-0.0986	0.99	not_significant
-RPS2	-0.4328	0.99	not_significant
-HMBS	-0.2186	0.99	not_significant
-SLC6A4	-0.6347	0.8799	not_significant
-DVL1	0.0073	0.6143	not_significant
-ALB	0.2245	0.99	not_significant
-ABCC1	-0.417	0.99	not_significant
-RAB18	-0.0481	0.3071	not_significant
-CFTR	-0.26	0.6797	not_significant
-APOB	-0.2821	0.4441	not_significant
-MCL1	-1.7552	0.004085	downregulated
-RPL18	-0.3681	0.7024	not_significant
-MT-CO1	-0.1133	0.99	not_significant
-COL6A1	-0.818	0.4524	not_significant
-TGFB2	0.1579	0.4622	not_significant
-SHH	-0.4902	0.777	not_significant
-FGFR2	0.9279	0.3292	not_significant
-RAB4A	0.0047	0.3325	not_significant
-NKX2-1	-0.2061	0.5248	not_significant
+Gene	log2FoldChange	padj	Gene_ID	Gene_Name	Description	Gene_Type	Classification
+ACACA	-1.6152	0.001763	ENSG00000278540_ACACA	ACACA	acetyl-CoA carboxylase alpha, first step of fatty acid synthesis, downregulated in viral stress	protein_coding	downregulated
+ACLY	-2.1018	2.6e-05	ENSG00000131473_ACLY	ACLY	ATP-citrate lyase, links TCA cycle to lipid synthesis, metabolic reprogramming in infection	protein_coding	downregulated
+ADAR	5.1054	0.000543	ENSG00000160710_ADAR	ADAR	adenosine deaminase RNA-specific, edits viral RNA, ISG, innate immune modulation	protein_coding	upregulated
+AKT1	-1.3669	0.002384	ENSG00000142208_AKT1	AKT1	AKT serine/threonine kinase 1, PI3K/AKT survival signaling, viral immune evasion target	protein_coding	downregulated
+APOBEC3A	3.8668	0.002326	ENSG00000128383_APOBEC3A	APOBEC3A	apolipoprotein B mRNA editing enzyme catalytic subunit 3A, cytidine deaminase, antiviral	protein_coding	upregulated
+ATP6V1B2	-1.6863	0.003371	ENSG00000137492_ATP6V1B2	ATP6V1B2	ATPase H+ transporting V1 subunit B2, vacuolar H-ATPase, endosomal acidification, viral entry	protein_coding	downregulated
+BCL2	-1.9083	0.006139	ENSG00000171791_BCL2	BCL2	BCL2 apoptosis regulator, anti-apoptotic, mitochondrial membrane, downregulated by IAV	protein_coding	downregulated
+BST2	6.464	0.001706	ENSG00000130303_BST2	BST2	bone marrow stromal antigen 2 (Tetherin), restricts budding of enveloped viruses	protein_coding	upregulated
+CASP1	4.2968	0.005099	ENSG00000137752_CASP1	CASP1	caspase 1, inflammasome effector, processes IL-1B and IL-18, pyroptosis	protein_coding	upregulated
+CCL5	8.4652	0.002391	ENSG00000271503_CCL5	CCL5	C-C motif chemokine ligand 5 (RANTES), recruits memory T cells and NK cells, anti-influenza	protein_coding	upregulated
+CCND1	-2.7714	0.011405	ENSG00000110092_CCND1	CCND1	cyclin D1, G1/S cell cycle regulator, CDK4/6 activator, suppressed during viral infection	protein_coding	downregulated
+CCND2	-2.5508	0.011396	ENSG00000118971_CCND2	CCND2	cyclin D2, G1/S transition, suppressed by viral stress response	protein_coding	downregulated
+CCND3	-2.2762	0.002342	ENSG00000112576_CCND3	CCND3	cyclin D3, G1/S cell cycle progression, downregulated in viral infection	protein_coding	downregulated
+CDH1	-2.1029	0.000855	ENSG00000039068_CDH1	CDH1	cadherin 1 (E-cadherin), epithelial cell-cell adhesion, tight junction component	protein_coding	downregulated
+CDK4	-2.6789	0.000318	ENSG00000135446_CDK4	CDK4	cyclin-dependent kinase 4, G1 phase progression, inhibited during viral stress	protein_coding	downregulated
+CDK6	-1.8348	0.011527	ENSG00000105810_CDK6	CDK6	cyclin-dependent kinase 6, G1 phase, phosphorylates Rb, suppressed by IAV	protein_coding	downregulated
+CXCL10	8.8641	0.001339	ENSG00000169245_CXCL10	CXCL10	C-X-C motif chemokine ligand 10 (IP-10), recruits NK cells and T cells, strong ISG	protein_coding	upregulated
+CXCL11	6.7014	0.010517	ENSG00000127partout_CXCL11	CXCL11	C-X-C motif chemokine ligand 11 (I-TAC), binds CXCR3, antiviral inflammation	protein_coding	upregulated
+CXCL9	7.1675	0.004763	ENSG00000138755_CXCL9	CXCL9	C-X-C motif chemokine ligand 9 (MIG), interferon-gamma-induced, T-cell recruitment	protein_coding	upregulated
+DDX58	6.6916	0.001146	ENSG00000107201_DDX58	DDX58	DExD/H-box helicase 58 (RIG-I), cytosolic RNA helicase, detects 5'-triphosphate viral RNA	protein_coding	upregulated
+DHX58	3.973	0.000898	ENSG00000137962_DHX58	DHX58	DExH-box helicase 58 (LGP2), RNA helicase, modulates RIG-I/MDA5 signaling	protein_coding	upregulated
+E2F1	-2.6611	0.012476	ENSG00000101412_E2F1	E2F1	E2F transcription factor 1, activates S-phase genes, downregulated in infected cells	protein_coding	downregulated
+EGFR	-2.1918	0.003426	ENSG00000146648_EGFR	EGFR	epidermal growth factor receptor, RTK, activated transiently then suppressed in IAV	protein_coding	downregulated
+EIF2AK2	5.8529	0.002299	ENSG00000108771_EIF2AK2	EIF2AK2	eukaryotic translation initiation factor 2-alpha kinase 2 (PKR), senses dsRNA, inhibits translation	protein_coding	upregulated
+EIF4E	-1.5652	0.006272	ENSG00000151650_EIF4E	EIF4E	eukaryotic translation initiation factor 4E, cap-dependent translation, mTOR target	protein_coding	downregulated
+FAS	3.8425	0.00096	ENSG00000026103_FAS	FAS	Fas cell surface death receptor, apoptosis via extrinsic pathway, upregulated by IFN	protein_coding	upregulated
+FASN	-1.8564	0.004207	ENSG00000169710_FASN	FASN	fatty acid synthase, de novo lipogenesis, required for viral membrane, suppressed by IFN	protein_coding	downregulated
+FN1	-2.4691	0.004805	ENSG00000115414_FN1	FN1	fibronectin 1, extracellular matrix glycoprotein, cell adhesion, reduced in viral infection	protein_coding	downregulated
+G6PD	-1.5358	0.003038	ENSG00000160211_G6PD	G6PD	glucose-6-phosphate dehydrogenase, pentose phosphate pathway, redox balance	protein_coding	downregulated
+HERC5	6.101	0.011945	ENSG00000138642_HERC5	HERC5	HECT and RLD domain-containing E3 ubiquitin ligase family member 5, ISGylation, antiviral	protein_coding	upregulated
+HERC6	5.2069	0.003025	ENSG00000138641_HERC6	HERC6	HECT and RLD domain-containing E3 ubiquitin ligase family member 6, ISGylation	protein_coding	upregulated
+IFI27	6.0409	0.00041	ENSG00000165949_IFI27	IFI27	interferon-alpha inducible protein 27, pro-apoptotic, ISG	protein_coding	upregulated
+IFI35	3.7983	0.005255	ENSG00000068079_IFI35	IFI35	interferon-induced protein 35, forms complex with NMI, ISG	protein_coding	upregulated
+IFI44	6.7946	0.010435	ENSG00000137965_IFI44	IFI44	interferon-induced protein 44, antiviral, GTPase activity	protein_coding	upregulated
+IFI44L	6.7419	0.002338	ENSG00000137309_IFI44L	IFI44L	interferon-induced protein 44-like, ISG, exact function unclear	protein_coding	upregulated
+IFI6	5.9171	0.000312	ENSG00000126709_IFI6	IFI6	interferon-alpha inducible protein 6, anti-apoptotic, interferon response	protein_coding	upregulated
+IFIH1	5.6677	0.003127	ENSG00000115267_IFIH1	IFIH1	interferon induced with helicase C domain 1 (MDA5), detects long dsRNA of viral origin	protein_coding	upregulated
+IFIT1	8.6901	0.006693	ENSG00000137965_IFIT1	IFIT1	interferon-induced protein with tetratricopeptide repeats 1, antiviral, inhibits viral RNA replication	protein_coding	upregulated
+IFIT2	7.2339	0.001379	ENSG00000119922_IFIT2	IFIT2	interferon-induced protein with tetratricopeptide repeats 2, blocks viral translation	protein_coding	upregulated
+IFIT3	6.7513	0.005138	ENSG00000119917_IFIT3	IFIT3	interferon-induced protein with tetratricopeptide repeats 3, antiviral defense	protein_coding	upregulated
+IFIT5	4.4986	0.002475	ENSG00000152778_IFIT5	IFIT5	interferon-induced protein with tetratricopeptide repeats 5, single-stranded RNA binding	protein_coding	upregulated
+IFITM1	7.7446	0.004299	ENSG00000185885_IFITM1	IFITM1	interferon-induced transmembrane protein 1, blocks viral entry into host cells	protein_coding	upregulated
+IFITM2	5.9493	0.001383	ENSG00000185201_IFITM2	IFITM2	interferon-induced transmembrane protein 2, restricts influenza and other viruses	protein_coding	upregulated
+IFITM3	8.8809	0.001986	ENSG00000142089_IFITM3	IFITM3	interferon-induced transmembrane protein 3, key restriction factor for IAV, GWAS influenza severity	protein_coding	upregulated
+IFNA1	4.7469	0.009213	ENSG00000120235_IFNA1	IFNA1	interferon alpha 1, antiviral cytokine, type I interferon family	protein_coding	upregulated
+IFNAR1	3.6601	0.000632	ENSG00000142089_IFNAR1	IFNAR1	interferon alpha and beta receptor subunit 1, JAK-STAT signaling receptor	protein_coding	upregulated
+IFNB1	7.4673	0.009888	ENSG00000171855_IFNB1	IFNB1	interferon beta 1, key antiviral cytokine, activates JAK-STAT signaling	protein_coding	upregulated
+IFNL1	6.517	0.002665	ENSG00000182393_IFNL1	IFNL1	interferon lambda 1 (IL-29), antiviral, acts on epithelial cells	protein_coding	upregulated
+IFNL2	4.8949	4e-06	ENSG00000183709_IFNL2	IFNL2	interferon lambda 2 (IL-28A), antiviral cytokine, respiratory epithelium	protein_coding	upregulated
+IL1B	4.7375	0.000471	ENSG00000125538_IL1B	IL1B	interleukin 1 beta, pro-inflammatory cytokine, inflammasome product, IAV pathogenesis	protein_coding	upregulated
+IL6	5.0398	0.004498	ENSG00000136244_IL6	IL6	interleukin 6, pleiotropic cytokine, acute phase response, pro-inflammatory in IAV	protein_coding	upregulated
+IL8	6.7562	0.011449	ENSG00000169429_IL8	IL8	C-X-C motif chemokine ligand 8 (IL-8/CXCL8), neutrophil chemoattractant, NF-kB target	protein_coding	upregulated
+IRF7	6.6533	0.003183	ENSG00000168394_IRF7	IRF7	interferon regulatory factor 7, master regulator of type I interferon response	protein_coding	upregulated
+IRF9	4.6208	0.002075	ENSG00000213928_IRF9	IRF9	interferon regulatory factor 9, forms ISGF3 complex with STAT1/STAT2	protein_coding	upregulated
+ISG15	10.2357	0.005496	ENSG00000187950_ISG15	ISG15	ISG15 ubiquitin-like modifier, conjugated to proteins during viral infection, antiviral	protein_coding	upregulated
+ISG20	5.2831	0.001048	ENSG00000172409_ISG20	ISG20	interferon-stimulated exonuclease gene 20, degrades single-stranded viral RNA	protein_coding	upregulated
+ITGA5	-1.3413	0.004142	ENSG00000161638_ITGA5	ITGA5	integrin subunit alpha 5, fibronectin receptor, cell adhesion, viral entry modulator	protein_coding	downregulated
+KRAS	-1.4708	0.009944	ENSG00000133703_KRAS	KRAS	KRAS proto-oncogene, GTPase, RAS/MAPK signaling, modulated in viral infection	protein_coding	downregulated
+MAVS	3.5857	0.003806	ENSG00000088888_MAVS	MAVS	mitochondrial antiviral signaling protein, adaptor for RIG-I/MDA5 pathway	protein_coding	upregulated
+MBD2	-1.5878	0.002881	ENSG00000900096_MBD2	MBD2	methyl-CpG binding domain protein 2, DNA methylation reader, gene silencing	protein_coding	downregulated
+MCL1	-1.7552	0.004085	ENSG00000143384_MCL1	MCL1	MCL1 apoptosis regulator, anti-apoptotic BCL2 family, suppressed in viral infection	protein_coding	downregulated
+MCM2	-2.82	0.003527	ENSG00000073111_MCM2	MCM2	minichromosome maintenance complex component 2, DNA replication helicase, cell cycle	protein_coding	downregulated
+MCM4	-2.1083	0.004718	ENSG00000120094_MCM4	MCM4	minichromosome maintenance complex component 4, DNA replication, suppressed by viral infection	protein_coding	downregulated
+MKI67	-2.9879	0.001	ENSG00000148773_MKI67	MKI67	marker of proliferation Ki-67, cell cycle progression, widely used proliferation marker	protein_coding	downregulated
+MTOR	-1.4592	0.006216	ENSG00000198793_MTOR	MTOR	mechanistic target of rapamycin kinase, nutrient sensing, translation control, IAV antagonizes	protein_coding	downregulated
+MX1	9.0299	0.005772	ENSG00000157601_MX1	MX1	MX dynamin-like GTPase 1, inhibits influenza virus replication, interferon-stimulated gene	protein_coding	upregulated
+MX2	5.0667	0.007146	ENSG00000183486_MX2	MX2	MX dynamin-like GTPase 2, antiviral activity against retroviruses and rhabdoviruses	protein_coding	upregulated
+MYC	-3.4179	0.000818	ENSG00000136997_MYC	MYC	MYC proto-oncogene, transcription factor, promotes cell proliferation, downregulated in viral stress	protein_coding	downregulated
+OAS1	7.7669	0.003017	ENSG00000137309_OAS1	OAS1	2'-5'-oligoadenylate synthetase 1, activates RNase L, degrades viral RNA	protein_coding	upregulated
+OAS2	6.1049	0.007062	ENSG00000111335_OAS2	OAS2	2'-5'-oligoadenylate synthetase 2, antiviral innate immunity	protein_coding	upregulated
+OAS3	6.0862	0.000406	ENSG00000135114_OAS3	OAS3	2'-5'-oligoadenylate synthetase 3, activates RNase L pathway	protein_coding	upregulated
+OASL	4.8429	0.003994	ENSG00000145425_OASL	OASL	2'-5'-oligoadenylate synthetase-like, enhances RIG-I signaling	protein_coding	upregulated
+PCNA	-1.8455	0.005643	ENSG00000132646_PCNA	PCNA	proliferating cell nuclear antigen, DNA clamp for replication, cell cycle marker	protein_coding	downregulated
+PIK3CA	-1.922	0.01012	ENSG00000121879_PIK3CA	PIK3CA	phosphatidylinositol-4,5-bisphosphate 3-kinase catalytic subunit alpha, PI3K/AKT pathway	protein_coding	downregulated
+PTPN6	-1.8233	0.013179	ENSG00000111679_PTPN6	PTPN6	protein tyrosine phosphatase non-receptor type 6 (SHP-1), negative immune regulator	protein_coding	downregulated
+RPL5	-1.6962	0.011403	ENSG00000122406_RPL5	RPL5	ribosomal protein L5, uL18 in new nomenclature, tumor suppressor, ribosome biogenesis	protein_coding	downregulated
+RPS6	-1.2671	4e-06	ENSG00000137332_RPS6	RPS6	ribosomal protein S6, eS6, phosphorylated by mTOR pathway, translation regulation	protein_coding	downregulated
+RSAD2	8.1292	0.008417	ENSG00000134321_RSAD2	RSAD2	radical S-adenosyl methionine domain-containing protein 2 (Viperin), broad antiviral activity against IAV	protein_coding	upregulated
+SAMD9L	4.4036	0.000825	ENSG00000155918_SAMD9L	SAMD9L	sterile alpha motif domain-containing protein 9-like, antiviral, innate immunity	protein_coding	upregulated
+SAMHD1	3.8978	0.005448	ENSG00000101347_SAMHD1	SAMHD1	SAM and HD domain-containing protein 1, dNTPase, restricts retroviruses and DNA viruses	protein_coding	upregulated
+SCD	-1.8122	0.004451	ENSG00000099194_SCD	SCD	stearoyl-CoA desaturase, lipid desaturation, required for enveloped virus assembly	protein_coding	downregulated
+SLC2A1	-1.5279	0.004572	ENSG00000117394_SLC2A1	SLC2A1	solute carrier family 2 member 1 (GLUT1), glucose transporter, metabolic reprogramming	protein_coding	downregulated
+SLC3A2	-1.6521	0.003058	ENSG00000168003_SLC3A2	SLC3A2	solute carrier family 3 member 2, amino acid transport, viral metabolism	protein_coding	downregulated
+SOCS1	-2.26	0.006244	ENSG00000185338_SOCS1	SOCS1	suppressor of cytokine signaling 1, negative feedback of JAK-STAT, exploited by viruses	protein_coding	downregulated
+SOCS3	-2.1259	0.011298	ENSG00000108465_SOCS3	SOCS3	suppressor of cytokine signaling 3, JAK-STAT negative regulator, viral immune evasion	protein_coding	downregulated
+SP1	-1.4755	0.008782	ENSG00000900087_SP1	SP1	Sp1 transcription factor, GC-box binding, ubiquitous activator	protein_coding	downregulated
+SP100	3.7414	0.002008	ENSG00000067066_SP100	SP100	SP100 nuclear antigen, component of PML bodies, antiviral, interferon-induced	protein_coding	upregulated
+STAT1	5.6565	0.001167	ENSG00000115415_STAT1	STAT1	signal transducer and activator of transcription 1, central mediator of interferon signaling	protein_coding	upregulated
+STAT2	4.1673	0.000608	ENSG00000170581_STAT2	STAT2	signal transducer and activator of transcription 2, type I interferon signaling, ISGF3 component	protein_coding	upregulated
+STING1	4.4681	0.003052	ENSG00000184584_STING1	STING1	stimulator of interferon response cGAMP interactor 1, cGAS-STING innate immune pathway	protein_coding	upregulated
+TLR3	3.18	0.002438	ENSG00000168830_TLR3	TLR3	toll-like receptor 3, recognizes double-stranded RNA, triggers interferon response	protein_coding	upregulated
+TNF	4.6093	0.000877	ENSG00000232810_TNF	TNF	tumor necrosis factor, pro-inflammatory cytokine, activates NF-kB, antiviral and pathological in IAV	protein_coding	upregulated
+TOP2A	-2.0466	0.005962	ENSG00000131747_TOP2A	TOP2A	topoisomerase II alpha, DNA decatenation, required for mitosis, downregulated in stressed cells	protein_coding	downregulated
+TRAIL	4.1568	0.001832	ENSG00000121858_TRAIL	TRAIL	TNF superfamily member 10 (TRAIL/TNFSF10), induces apoptosis in virus-infected cells	protein_coding	upregulated
+TRIM22	5.2791	0.00193	ENSG00000132109_TRIM22	TRIM22	tripartite motif-containing protein 22, E3 ubiquitin ligase, restricts IAV and HIV	protein_coding	upregulated
+TRIM25	4.0535	0.003828	ENSG00000121060_TRIM25	TRIM25	tripartite motif-containing protein 25, ubiquitinates RIG-I for activation, antiviral	protein_coding	upregulated
+UBE2L6	4.9464	0.00778	ENSG00000132561_UBE2L6	UBE2L6	ubiquitin-conjugating enzyme E2 L6, ISGylation pathway, antiviral	protein_coding	upregulated
+VIM	-2.1647	0.005078	ENSG00000026025_VIM	VIM	vimentin, intermediate filament protein, cytoskeletal reorganization, viral entry cofactor	protein_coding	downregulated
+XIAP	-1.7521	0.002586	ENSG00000101966_XIAP	XIAP	X-linked inhibitor of apoptosis, inhibits caspases 3, 7, 9, downregulated in infection	protein_coding	downregulated
+ZNFX1	4.1452	0.005905	ENSG00000186073_ZNFX1	ZNFX1	zinc finger NFX1-type containing 1, antiviral RNA helicase, ISG	protein_coding	upregulated
