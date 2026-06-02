@@ -95,7 +95,7 @@ uv run python3 analyse_iav.py -i data/iav_deseq2_results.tsv -o results/res.tsv 
 ## Ejemplo de salida esperada (actualizacion)
 
 ```text
-gene	log2FoldChange	padj    Gene_ID	Gene_Name   Description Gene_Type   Classification
-MX1	4.2	0.0001  ENSG00000278540_MX1	 MX1  acetyl-CoA carboxylase alpha, first step...	upregulated
-IFIT1	5.1	0.00001  ENSG00000131473_IFIT1	IFIT1	ATP-citrate lyase, links TCA cycle...  upregulated
+gene	log2FoldChange	padj    Gene_ID	Gene_Name   Description   Gene_Type   Classification
+MX1	4.2	0.0001  ENSG00000278540_MX1	 MX1  acetyl-CoA carboxylase alpha, first step...	  protein_coding  upregulated
+IFIT1	5.1	0.00001  ENSG00000131473_IFIT1	IFIT1	ATP-citrate lyase, links TCA cycle...  protein_coding  upregulated
 ```
