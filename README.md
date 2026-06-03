@@ -88,7 +88,7 @@ uv run python3 analyse_iav.py -i data/iav_deseq2_results.tsv -o results/res.tsv 
 Ejemplo:
 
 ```bash
-uv run python3 analyse_iav.py -i data/iav_deseq2_results.tsv -o results/res.tsv -g data/human_genes.gff --lfc-threshold 0.0 --padj-threshold -1 --columna-gene 1 --columna-lfc 3 --columna-padj 7
+uv run python3 analyse_iav.py -i data/iav_deseq2_results.tsv -o results/res.tsv -g data/human_genes.gff --lfc-threshold 0.0 --padj-threshold 0.05 --columna-gene 1 --columna-lfc 3 --columna-padj 7
 ```
 
 
